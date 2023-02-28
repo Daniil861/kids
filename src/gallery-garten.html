@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AcademKids"
+})
+
+<body>
+	@@include('html/_loader.htm',{})
+	<div data-page="classes" class="wrapper">
+		@@include('html/_header-single-filial.htm',{})
+
+		<main class="page">
+			<div class="page__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__container">
+					<div class="breadcrumbs__body">
+						<a href="main.html" aria-label="page-link"
+							class="breadcrumbs__link breadcrumbs__link_home _icon-home"></a>
+						<div class="breadcrumbs__current-link">
+							<p>Галерея</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="page-gallery__gallery-page">
+				<div class="gallery-page__container">
+					<div class="gallery-page__body">
+						<div class="gallery-page__shape-box">
+							<div class="gallery-page__shape shape"></div>
+						</div>
+						<div class="gallery-page__top">
+							<div class="gallery-page__title _title-page-main _title-circle">
+								<div class="_title-circle__inner"></div>
+								<h1>Фотогалерея и видеоблог</h1>
+							</div>
+							<div class="gallery-page__text text-title">
+								<p>
+									Посмотрите на счастливые лица наших деток и окунитесь в атмосферу наших детских садов
+								</p>
+							</div>
+						</div>
+						<div class="gallery-page__tabs-box">
+							<div data-tabs class="gallery-page__tabs">
+								<div class="gallery-page__circle gallery-page__circle_1 circle circle_purple"></div>
+								<div class="gallery-page__circle gallery-page__circle_2 circle circle_blue"></div>
+								<div class="gallery-page__circle circle gallery-page__circle_3 circle_blue"></div>
+								<nav data-tabs-titles class="gallery-page__navigation tab__nav">
+									<button type="button"
+										class="gallery-page__tabs-title tab__title tab__title tab__title_bef _icon-camera _tab-active"><span>Фотогалерея</span></button>
+									<button type="button"
+										class="gallery-page__tabs-title tab__title tab__title tab__title_bef _icon-camera-vid"><span>Видеоблог</span></button>
+								</nav>
+								<div data-tabs-body class="gallery-page__content">
+									<div class="gallery-page__inner">
+										<div class="gallery-page__photo photo-gallery">
+											<div class="photo-gallery__body">
+												<div class="photo-gallery__images">
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-1.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-2.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-3.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-4.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-5.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-6.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-7.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-8.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-9.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-10.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-11.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-12.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-13.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-2.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-14.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-15.png" alt="Image">
+														<span></span>
+													</div>
+
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-13.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-2.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-14.png" alt="Image">
+														<span></span>
+													</div>
+													<div class="photo-gallery__image">
+														<img src="@img/gallery/gallery-15.png" alt="Image">
+														<span></span>
+													</div>
+												</div>
+												<div class="photo-gallery__button-box">
+													<button class="photo-gallery__button button-gradient"><span>Показать
+															больше</span></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="gallery-page__inner">
+										<div class="gallery-page__video video-gallery">
+											<div class="video-gallery__body">
+												<ul class="video-gallery__navigation">
+													<li data-filter=".celebrations" data-path="celebrations"
+														class="video-gallery__button _is-checked"><span>#Праздники</span>
+													</li>
+													<li data-filter=".classes" data-path="classes" class="video-gallery__button">
+														<span>#Занятия</span>
+													</li>
+													<li data-filter=".strolls" data-path="strolls" class="video-gallery__button">
+														<span>#Прогулки</span>
+													</li>
+													<li data-filter=".relax" data-path="relax" class="video-gallery__button">
+														<span>#Отдых</span>
+													</li>
+												</ul>
+												<div class="video-gallery__buttons">
+													<div class="video-gallery__button-prev btn-slider-prev _icon-arrow-bottom">
+													</div>
+													<div class="video-gallery__button-next btn-slider-next _icon-arrow-bottom">
+													</div>
+												</div>
+												<div class="video-gallery__items">
+													<div data-target="celebrations,relax"
+														class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-1.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Праздники </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="celebrations,relax"
+														class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-2.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Праздники </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="classes" class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-3.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Занятия </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="classes" class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-4.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Занятия </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="classes,relax" class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-5.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Занятия </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="strolls,relax" class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-6.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Прогулки </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="celebrations,relax"
+														class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-1.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Праздники </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="celebrations,relax"
+														class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-1.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Праздники </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="celebrations,relax"
+														class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-1.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Праздники </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="celebrations,relax"
+														class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-1.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Праздники </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-target="celebrations,relax"
+														class="video-gallery__item item-video-gallery">
+														<div class="item-video-gallery__body">
+															<div class="item-video-gallery__title">
+																<h3>Праздник в детском саду Academkids
+																	25.09.2020
+																</h3>
+															</div>
+															<div class="item-video-gallery__video-box video-box">
+																<video poster="@img/gallery/posters/poster-1.png" preload="none"
+																	src="./files/video/test.mp4"></video>
+																<div class="item-video-gallery__icon-play icon-play"><span></span></div>
+															</div>
+															<div class="item-video-gallery__hashs">
+																<div class="item-video-gallery__hash">
+																	<p> #Праздники </p>
+																</div>
+																<div class="item-video-gallery__hash">
+																	<p> #Отдых </p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="video-gallery__button-box">
+												<button class="video-gallery__button-more button-gradient"><span>Показать
+														ещё</span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__map map-garten">
+				<div class="map-garten__container">
+					<div class="map-garten__body">
+						<div class="map-garten__map-box">
+							<div id="map" class="map-garten__map">
+								<div class="map__lds-roller">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+						<div class="map-garten__content">
+							<div class="map-garten__info-box">
+								<div class="map-garten__title _title-page-main _title-page-main_small">
+									<h4>AcademKids в <span>ЖК "Рассказово"</span></h4>
+								</div>
+								<div class="map-garten__item">
+									<div class="map-garten__icon">
+										<img src="@img/main/icons/location.svg" alt="Icon">
+									</div>
+									<div class="map-garten__text-box">
+										<div class="map-garten__text">
+											<span>ЖК "Рассказово”</span>
+										</div>
+										<div class="map-garten__text">
+											<p>г. Москва, ул Бульвар Андрея Тарковского, 14</p>
+										</div>
+									</div>
+								</div>
+								<div class="map-garten__item">
+									<div class="map-garten__icon">
+										<img src="@img/main/icons/clock.svg" alt="Icon">
+									</div>
+									<div class="map-garten__text-box">
+										<div class="map-garten__text">
+											<p><span>08:00 - 20:00</span> (с 7:00 до 8:00 - дежурная группа)</p>
+										</div>
+									</div>
+								</div>
+								<div class="map-garten__item ">
+									<div class="map-garten__icon">
+										<img src="@img/main/icons/phone.svg" alt="Icon">
+									</div>
+									<a href="tel:88003506929" class="map-garten__text-box">
+										<div class="map-garten__text">
+											<p><span>8 800 350 69 29 </span> </p>
+										</div>
+									</a>
+								</div>
+								<div class="map-garten__item ">
+									<div class="map-garten__icon">
+										<img src="@img/main/icons/phone.svg" alt="Icon">
+									</div>
+									<a href="tel:79260118691" class="map-garten__text-box">
+										<div class="map-garten__text">
+											<p><span>7 926 011 86 91 </span> </p>
+										</div>
+									</a>
+								</div>
+								<div class="contacts-middle-footer__mail-box">
+									<p>Или можете написать нам</p>
+									<a href="mailto:info@academkids.ru"
+										class="contacts-middle-footer__mail">info@academkids.ru</a>
+								</div>
+								<div class="contacts-middle-footer__socials-box _reverse">
+									<div class="contacts-middle-footer__socials socials">
+										<div class="socials__body">
+											<div class="socials__top">
+												<p>Мы всегда online</p>
+											</div>
+											<div class="socials__items">
+												<a aria-label="link-whatsap" href="#"
+													class="socials__item socials__item_wh _icon-whatsap"></a>
+												<a aria-label="link-telegram" href="#"
+													class="socials__item socials__item_tg _icon-telegram"></a>
+												<a aria-label="link-viber" href="#"
+													class="socials__item socials__item_vb _icon-viber"></a>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-middle-footer__socials socials">
+										<div class="socials__body">
+											<div class="socials__top">
+												<p>Мы есть в соц.сетях</p>
+											</div>
+											<div class="socials__items">
+												<a aria-label="link-instagram" href="#"
+													class="socials__item socials__item_insta _icon-insta"></a>
+												<a aria-label="link-youtube" href="#"
+													class="socials__item socials__item_youtube _icon-youtube"></a>
+												<a aria-label="link-facebok" href="#"
+													class="socials__item socials__item_fb _icon-facebook"></a>
+												<a aria-label="link-wk" href="#"
+													class="socials__item socials__item_wk _icon-wk"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-middle-footer__subscribe-box">
+									<a href="#" aria-label="subscribe-tg" class="contacts-middle-footer__icon _icon-telegram">
+									</a>
+									<p>Подписывайтесь на наш Телеграмм канал</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_modal-callback.htm',{})
+	@@include('html/_modal-consultation.htm',{})
+	@@include('html/_modal-login.htm',{})
+	@@include('html/_modal-recover.htm',{})
+	@@include('html/_modal-picture.htm',{})
+
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

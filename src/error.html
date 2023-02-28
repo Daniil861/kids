@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AcademKids"
+})
+
+<body>
+	@@include('html/_loader.htm',{})
+	<div data-page="contacts" class="wrapper">
+		@@include('html/_header-single-filial.htm',{})
+
+		<main class="page-news">
+			<div class="page__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__container">
+					<div class="breadcrumbs__body">
+						<a href="main.html" aria-label="page-link"
+							class="breadcrumbs__link breadcrumbs__link_home _icon-home"></a>
+						<div class="breadcrumbs__current-link">
+							<p>404</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="page__error error">
+				<div class="error__container">
+					<div class="error__body">
+						<div class="error__circle error__circle_1 circle circle_purple"> </div>
+						<div class="error__circle error__circle_2 circle circle_blue"> </div>
+						<div class="error__shape-box">
+							<div class="error__shape shape"></div>
+						</div>
+						<div class="error__title _title-circle">
+							<div class="_title-circle__inner"></div>
+							<h1><span>Сожалеем,</span> но такой страницы не существует</h1>
+						</div>
+						<div class="error__sub-title">
+							<h2>Но есть много <span>других полезных страниц:</span></h2>
+						</div>
+						<div class="error__content">
+							<div class="error__item">
+								<p>4</p>
+							</div>
+							<div class="error__image">
+								<img src="@img/icons/loader/logo-head.svg" alt="Image">
+							</div>
+							<div class="error__item">
+								<p>4</p>
+							</div>
+						</div>
+						<div class="error__buttons">
+							<a href="main.html" class="error__link"><span>Страница сети</span></a>
+							<a href="#" class="error__button _icon-arrow-bottom"><span>Выбрать сад</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_modal-callback.htm',{})
+	@@include('html/_modal-consultation.htm',{})
+	@@include('html/_modal-login.htm',{})
+	@@include('html/_modal-recover.htm',{})
+
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

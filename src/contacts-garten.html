@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AcademKids"
+})
+
+<body>
+	@@include('html/_loader.htm',{})
+	<div data-page="contacts" class="wrapper">
+		@@include('html/_header-single-filial.htm',{})
+
+		<main class="page-news">
+			<div class="page__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__container">
+					<div class="breadcrumbs__body">
+						<a href="main.html" aria-label="page-link"
+							class="breadcrumbs__link breadcrumbs__link_home _icon-home"></a>
+						<div class="breadcrumbs__current-link">
+							<p>Контакты</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="page__map map-garten">
+				<div class="map-garten__container">
+					<div class="map-garten__main-title _title-page-main _title-circle">
+						<div class="_title-circle__inner"></div>
+						<h1>Контакты</h1>
+					</div>
+					<div class="map-garten__body">
+						<div class="map-garten__circle map-garten__circle_1 circle circle_purple"></div>
+						<div class="map-garten__circle map-garten__circle_2 circle circle_purple"></div>
+						<div class="map-garten__circle map-garten__circle_3 circle circle_blue"></div>
+						<div class="map-garten__map-box">
+							<div id="map" class="map-garten__map">
+								<div class="map__lds-roller">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+						<div class="map-garten__content">
+							<div class="map-garten__info-box">
+								<div class="map-garten__title _title-page-main _title-page-main_small">
+									<h4>AcademKids в <span>ЖК "Рассказово"</span></h4>
+								</div>
+								<div class="map-garten__item">
+									<div class="map-garten__icon">
+										<img src="@img/main/icons/location.svg" alt="Icon">
+									</div>
+									<div class="map-garten__text-box">
+										<div class="map-garten__text">
+											<span>ЖК "Рассказово”</span>
+										</div>
+										<div class="map-garten__text">
+											<p>г. Москва, ул Бульвар Андрея Тарковского, 14</p>
+										</div>
+									</div>
+								</div>
+								<div class="map-garten__item">
+									<div class="map-garten__icon">
+										<img src="@img/main/icons/clock.svg" alt="Icon">
+									</div>
+									<div class="map-garten__text-box">
+										<div class="map-garten__text">
+											<p><span>08:00 - 20:00</span> (с 7:00 до 8:00 - дежурная группа)</p>
+										</div>
+									</div>
+								</div>
+								<div class="map-garten__item ">
+									<div class="map-garten__icon">
+										<img src="@img/main/icons/phone.svg" alt="Icon">
+									</div>
+									<a href="tel:88003506929" class="map-garten__text-box">
+										<div class="map-garten__text">
+											<p><span>8 800 350 69 29 </span> </p>
+										</div>
+									</a>
+								</div>
+								<div class="map-garten__item ">
+									<div class="map-garten__icon">
+										<img src="@img/main/icons/phone.svg" alt="Icon">
+									</div>
+									<a href="tel:79260118691" class="map-garten__text-box">
+										<div class="map-garten__text">
+											<p><span>7 926 011 86 91 </span> </p>
+										</div>
+									</a>
+								</div>
+								<div class="contacts-middle-footer__mail-box">
+									<p>Или можете написать нам</p>
+									<a href="mailto:info@academkids.ru"
+										class="contacts-middle-footer__mail">info@academkids.ru</a>
+								</div>
+								<div class="contacts-middle-footer__socials-box _reverse">
+									<div class="contacts-middle-footer__socials socials">
+										<div class="socials__body">
+											<div class="socials__top">
+												<p>Мы всегда online</p>
+											</div>
+											<div class="socials__items">
+												<a aria-label="link-whatsap" href="#"
+													class="socials__item socials__item_wh _icon-whatsap"></a>
+												<a aria-label="link-telegram" href="#"
+													class="socials__item socials__item_tg _icon-telegram"></a>
+												<a aria-label="link-viber" href="#"
+													class="socials__item socials__item_vb _icon-viber"></a>
+											</div>
+										</div>
+									</div>
+									<div class="contacts-middle-footer__socials socials">
+										<div class="socials__body">
+											<div class="socials__top">
+												<p>Мы есть в соц.сетях</p>
+											</div>
+											<div class="socials__items">
+												<a aria-label="link-instagram" href="#"
+													class="socials__item socials__item_insta _icon-insta"></a>
+												<a aria-label="link-youtube" href="#"
+													class="socials__item socials__item_youtube _icon-youtube"></a>
+												<a aria-label="link-facebok" href="#"
+													class="socials__item socials__item_fb _icon-facebook"></a>
+												<a aria-label="link-wk" href="#"
+													class="socials__item socials__item_wk _icon-wk"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="contacts-middle-footer__subscribe-box">
+									<a href="#" aria-label="subscribe-tg" class="contacts-middle-footer__icon _icon-telegram">
+									</a>
+									<p>Подписывайтесь на наш Телеграмм канал</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_modal-callback.htm',{})
+	@@include('html/_modal-consultation.htm',{})
+	@@include('html/_modal-login.htm',{})
+	@@include('html/_modal-recover.htm',{})
+	@@include('html/_modal-picture.htm',{})
+
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+.sertificats-page {
+	// .sertificats-page__container
+
+	&__container {
+		@include adaptiveValue("margin-bottom", 100, 80);
+	}
+
+	// .sertificats-page__body
+
+	&__body {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__circle {
+		&_1 {
+			top: 0;
+			right: -15%;
+			@media (max-width: $mobile) {
+				top: 20%;
+			}
+		}
+		&_2 {
+			top: 15%;
+			left: -15%;
+			&::before {
+				animation-delay: $timeDelay;
+			}
+		}
+	}
+
+	// .sertificats-page__title
+
+	&__title {
+		margin-bottom: rem(50);
+		@media (max-width: $mobile) {
+			margin-bottom: rem(40);
+			max-width: rem(600);
+		}
+	}
+
+	// .sertificats-page__items-box
+
+	&__items-box {
+	}
+
+	// .sertificats-page__items
+
+	&__items {
+		display: grid;
+		grid-template-columns: 1fr;
+		@include adaptiveValue("column-gap", 30, 15);
+		@include adaptiveValue("row-gap", 50, 30);
+		@include adaptiveValue("margin-bottom", 60, 40);
+		@media (min-width: $mobileSmall) {
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
+		@media (min-width: em(1200)) {
+			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		}
+		@media (min-width: em(1550)) {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+	}
+
+	// .sertificats-page__item
+
+	&__item {
+		display: none;
+		&._visible {
+			display: block;
+		}
+	}
+}
+
+.item-sertificats-page {
+	// .item-sertificats-page__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(30);
+
+		@media (max-width: $mobile) {
+			row-gap: rem(20);
+		}
+	}
+
+	// .item-sertificats-page__image
+
+	&__image {
+		position: relative;
+		width: 100%;
+		padding-bottom: calc(469 / 345) * 100%;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media (min-width: em(1200)) {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+				background-image: linear-gradient(180deg, rgba(13, 188, 255, 0) 37.09%, rgba(13, 188, 255, 0.53) 100%);
+
+				transition: all 0.3s ease 0s;
+
+				opacity: 0;
+				visibility: hidden;
+			}
+			span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 3;
+				transform: translate(-50%, -50%);
+				width: rem(39);
+				height: rem(39);
+
+				background-image: url("@img/main/icons/resize.svg");
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+
+				cursor: pointer;
+
+				opacity: 0;
+				visibility: hidden;
+
+				transition: all 0.3s ease 0s;
+
+				@media (any-hover: hover) {
+					&:hover {
+						transform: translate(-50%, -50%) scale(1.2);
+					}
+				}
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					&::before,
+					span {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+
+	// .item-sertificats-page__text
+
+	&__text {
+		font-weight: 400;
+		@include adaptiveValue("font-size", 22, 18);
+		line-height: math.div(27, 22);
+		text-align: center;
+	}
+}

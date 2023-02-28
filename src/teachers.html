@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AcademKids"
+})
+
+<body>
+	@@include('html/_loader.htm',{})
+	<div data-page="main" data-header-big class="wrapper">
+		@@include('html/_header-single-filial.htm',{})
+
+		<main class="page">
+
+			<div class="page-classes__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__container">
+					<div class="breadcrumbs__body">
+						<a href="." aria-label="page-link" class="breadcrumbs__link breadcrumbs__link_home _icon-home"></a>
+						<div class="breadcrumbs__current-link">
+							<p>Педагоги</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="page__teachers teachers">
+				<div class="teachers__container">
+					<div class="teachers__circle teachers__circle_1 circle circle_purple"></div>
+					<div class="teachers__circle teachers__circle_2 circle circle_blue"></div>
+					<div class="teachers__shape-box">
+						<div class="teachers__shape shape"></div>
+					</div>
+					<div class="teachers__body">
+						<div class="teachers__title _title-page-main _title-circle">
+							<div class="_title-circle__inner"></div>
+							<h1>Педагоги</h1>
+						</div>
+
+						<div class="teachers__filter filter-teachers">
+							<div class="filter-teachers__body">
+								<div class="filter-teachers__content">
+									<ul class="filter-teachers__navigation">
+										<li data-filter="*" data-path="all" class="filter-teachers__button _is-checked">
+											<span>Все</span>
+										</li>
+										<li data-filter=".management" data-path="management" class="filter-teachers__button">
+											<span>Руководство</span>
+										</li>
+										<li data-filter=".teachers" data-path="teachers" class="filter-teachers__button">
+											<span>Педагоги</span>
+										</li>
+										<li data-filter=".cook" data-path="cook" class="filter-teachers__button">
+											<span>Повар</span>
+										</li>
+										<li data-filter=".health" data-path="health" class="filter-teachers__button">
+											<span>Медсестра</span>
+										</li>
+									</ul>
+									<div class="filter-teachers__buttons">
+										<div class="filter-teachers__button-prev btn-slider-prev _icon-arrow-bottom">
+										</div>
+										<div class="filter-teachers__button-next btn-slider-next _icon-arrow-bottom">
+										</div>
+									</div>
+									<div class="filter-teachers__items">
+										<div data-target="management" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Гутина Кристина Викторовна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Директор AcademKids</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Опыт педагогической работы –
+																<span>свыше 5 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item">Награждена знаком отличия
+																<span>«Почетный работник дошкольного образования»</span>
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="management" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Васюк Людмила Михайловна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Руководитель дошкольного отделения</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Cтаж педагогической работы –
+																<span>свыше 30 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item">Педагогическое образование по
+																специальности «Русский язык и литература»
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="teachers" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Зуева Наталья Александровна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Воспитатель</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Cтаж педагогической работы –
+																<span>свыше 14 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item"><span>Образование –
+																	высшее.</span>
+																ФГБОУ ВПО "Орловский государственный университет"
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="teachers" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Молчанская Вера Александровна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Воспитатель</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Опыт педагогической работы –
+																<span>свыше 5 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item">Награждена знаком отличия
+																<span>«Почетный работник дошкольного образования»</span>
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="teachers" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Зотова Наталия Николаевна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Учитель физкультуры</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Cтаж педагогической работы –
+																<span>свыше 30 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item">Педагогическое образование по
+																специальности «Русский язык и литература»
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="health" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Грызлова Анна Владимировна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Логопед-дефектолог</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Cтаж педагогической работы –
+																<span>свыше 14 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item"><span>Образование –
+																	высшее.</span>
+																ФГБОУ ВПО "Орловский государственный университет"
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="teachers" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Трухина Наталия Владимировна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Преподаватель анг. языка</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Опыт педагогической работы –
+																<span>свыше 5 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item">Награждена знаком отличия
+																<span>«Почетный работник дошкольного образования»</span>
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="teachers" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Наседкина Наталья Анатольевна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Воспитатель</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Cтаж педагогической работы –
+																<span>свыше 30 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item">Педагогическое образование по
+																специальности «Русский язык и литература»
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="teachers" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Кондакова Яна Александровна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Педагог-психолог</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Cтаж педагогической работы –
+																<span>свыше 14 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item"><span>Образование –
+																	высшее.</span>
+																ФГБОУ ВПО "Орловский государственный университет"
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div data-target="health" class="filter-teachers__item item-filter-teachers">
+											<div class="item-filter-teachers__body">
+												<div class="item-filter-teachers__inner">
+													<div class="item-filter-teachers__image">
+														<img src="@img/teachers/employe.png" alt="Image">
+													</div>
+													<div class="item-filter-teachers__title">
+														<p>Грызлова Анна Владимировна</p>
+													</div>
+													<div class="item-filter-teachers__sub-title">
+														<p>Логопед-дефектолог</p>
+													</div>
+													<div class="item-filter-teachers__list-box">
+														<ul class="item-filter-teachers__list">
+															<li class="item-filter-teachers__list-item">Cтаж педагогической работы –
+																<span>свыше 14 лет.</span>
+															</li>
+															<li class="item-filter-teachers__list-item"><span>Образование –
+																	высшее.</span>
+																ФГБОУ ВПО "Орловский государственный университет"
+															</li>
+														</ul>
+													</div>
+													<div data-spollers
+														class="item-filter-teachers__spoller spoller-item-filter-teachers">
+														<div class="spoller-item-filter-teachers__spoller">
+															<div class="spoller-item-filter-teachers__body">
+																<div class="spoller-item-filter-teachers__text">
+																	<p>Имеет высшее педагогическое образование по специальности «Русский
+																		язык и литература»; стаж педагогической работы – свыше 30 лет,
+																		награждена нагрудным знаком Министерства образования Республики
+																		Беларусь «Отличник образования».
+																		Cтаж педагогической работы – свыше 30 лет.</p>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Повышение квалификации:</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			15.05.2015 г. - Участие во Всероссийском семинаре «Мониторинг в
+																			системе качества образования».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			30.06.2015 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			по дополнительной образовательной программе «Современные
+																			проблемы
+																			управления образовательной организацией» - 108 ч.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			19.01.2018 г. - ООО «Издательство «Учитель» повышение
+																			квалификации
+																			«Профессиональная компетентность педагога образовательной
+																			организации в условиях реализации ФГОС» - 72 ч
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			28.02.2018. – Диплом о профессиональной переподготовке. ООО
+																			«Международный центр образования и социально-гуманитарных
+																			исследований по программе «Педагогическое образование: методист
+																			образовательной организации» - 520 ч.
+																		</li>
+																	</ul>
+																</div>
+																<div class="spoller-item-filter-teachers__item">
+																	<div class="spoller-item-filter-teachers__sub-title-box">
+																		<div class="spoller-item-filter-teachers__sub-title">
+																			<p>Квалификация:</p>
+																		</div>
+																		<div class="spoller-item-filter-teachers__sub-text">
+																			<p>Методист образовательной организации.</p>
+																		</div>
+																	</div>
+																	<ul class="spoller-item-filter-teachers__list">
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века по теме: «Методика и
+																			педагогические
+																			технологии в образовании 21 века»
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			13.04.2020 г. – Прошла тестирование в Фонде Образовательной и
+																			научной деятельности 21 века на знание
+																			санитарно-эпидемиологических требований к устройству,
+																			содержанию и
+																			организации режима работы дошкольных образовательных
+																			учреждений.
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			26.07.2021 г. – повышение квалификации в АНО дополнительного
+																			профессионального образования «Институт современного
+																			образования»
+																			по дополнительной профессиональной программе «Менеджмент:
+																			эффективное управление образовательной организацией в условиях
+																			введения и реализации ФГОС СОО».
+																		</li>
+																		<li class="spoller-item-filter-teachers__list-item">
+																			14.11.2021 г. - Школа менеджера образования: «Правила оказания
+																			первой помощи пострадавшим»
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<button type="button" data-spoller data-spoller-title="down"
+																data-opened-text="Закрыть" data-closed-text="Открыть больше"
+																class="spoller-item-filter-teachers__title _icon-arrow-bottom">Открыть
+																больше</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-teachers__button-box">
+									<button class="filter-teachers__button-more button-gradient"><span>Показать
+											ещё</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="page__tour tour">
+				<div class="tour__circle circle circle_purple"></div>
+				<div class="tour__circle tour__circle_2 circle circle_purple"></div>
+				<div class="tour__body">
+					<div class="tour__container">
+						<div class="tour__title _title-page-main _title-page-main_small">
+							<h3>Мы всегда рады <span>видеть вас на экскурсии</span> в наших детских садах</h3>
+						</div>
+						<div class="tour__items">
+							<div class="tour__steps-box">
+								<div class="tour__steps">
+									<div class="tour__step">
+										<p>Оставьте заявку и мы расскажем о программах</p>
+									</div>
+									<div class="tour__step">
+										<p>Ответим на ваши вопросы</p>
+									</div>
+									<div class="tour__step">
+										<p>Или запишем на удобное для вас время на экскурсию в ближайший детский садик.</p>
+									</div>
+								</div>
+								<div class="tour__button-box">
+									<button type="button" data-modal-tour-btn class="tour__button">
+										<span>Записаться на экскурсию</span>
+									</button>
+								</div>
+							</div>
+							<div class="tour__socials socials">
+								<div class="socials__body _big">
+									<div class="socials__top">
+										<p>Или напишите нам</p>
+										<p>Задайте вопрос в мессенджеры</p>
+									</div>
+									<div class="socials__items">
+										<a aria-label="link-whatsap" href="#"
+											class="socials__item socials__item_wh _icon-whatsap _big"></a>
+										<a aria-label="link-viber" href="#"
+											class="socials__item socials__item_vb _icon-viber _big"></a>
+										<a aria-label="link-telegram" href="#"
+											class="socials__item socials__item_tg _icon-telegram _big"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_modal-callback.htm',{})
+	@@include('html/_modal-consultation.htm',{})
+	@@include('html/_modal-login.htm',{})
+	@@include('html/_modal-recover.htm',{})
+	@@include('html/_modal-tour.htm',{})
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

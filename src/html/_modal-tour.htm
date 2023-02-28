@@ -1,0 +1,55 @@
+<div data-modal-tour class="modal">
+	<div class="modal__body">
+		<div class="modal__title">
+			<h3>Записаться на экскурсию</h3>
+		</div>
+		<div class="modal__text">
+			<h3>Заполните данные и мы свяжемся с вами и <span>запишем на экскурсию</span></h3>
+		</div>
+		<div class="modal__form-box">
+			<form action="#" id="form-tour-main" class="modal__form">
+				<div class="modal__box">
+					<div class="modal__sub-title">Имя</div>
+					<input autocomplete="off" placeholder="Введите имя" name="call-name" type="text"
+						class="modal__input _req _name">
+				</div>
+				<div class="modal__box">
+					<div class="modal__sub-title">Телефон</div>
+					<input autocomplete="off" placeholder="Введите телефон" name="call-phone" type="tel"
+						class="modal__input _req _tel">
+				</div>
+				<div class="modal__box">
+					<div class="modal__sub-title">Выберите сад</div>
+					<select name="form[tour]" class="form">
+						<option value="1">ЖК "Римского-Корсакова 11”</option>
+						<option value="2">ЖК "Николин Парк”</option>
+						<option value="3">ЖК "Рассказово”</option>
+						<option value="4">ЖК "Западный порт”</option>
+						<option value="5">ЖК "Рассказово”</option>
+					</select>
+				</div>
+				<div class="modal__check-box">
+					<input id="formAgreement2" checked type="checkbox" class="modal__checkbox _req">
+					<label for="formAgreement2" class="modal__label"></label>
+					<span>Даю свое согласие на обработку
+						<a href="#">персональных данных</a></span>
+				</div>
+				<div class="modal__button-box">
+					<button type="submit" class="modal__button">
+						Отправить
+					</button>
+				</div>
+			</form>
+		</div>
+		<button type="button" class="modal__btn-close"><span></span></button>
+	</div>
+	<div class="modal__after-complete-box after-complete-box">
+		<div class="after-complete-box__body">
+			<div class="after-complete-box__text">Ваша заявка отправлена, ждите звонка</div>
+			<div class="after-complete-box__icon">
+				<img loading="lazy" src="@img/icons/arrow-complete.svg" alt="Icon">
+			</div>
+			<button type="button" class="modal__btn-close"><span></span></button>
+		</div>
+	</div>
+</div>

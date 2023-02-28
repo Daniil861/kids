@@ -1,0 +1,334 @@
+//====================================================================================================
+.footer {
+	// .footer__body
+
+	&__body {
+		background-image: linear-gradient(98.95deg, rgba(246, 250, 255, 0.5) 6.09%, rgba(223, 245, 255, 0.5) 93%);
+		box-shadow: 0px 5px 20px #f2fbff;
+		backdrop-filter: blur(12.5px);
+
+		@include adaptiveValue("border-top-right-radius", 100, 35, 1500, 320, 1);
+		@include adaptiveValue("border-top-left-radius", 100, 35, 1500, 320, 1);
+		border-top: 1px solid rgba(8, 181, 248, 1);
+	}
+
+	// .footer__container
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .footer__top
+
+	&__top {
+	}
+
+	// .footer__logo
+
+	&__logo {
+		display: inline-block;
+		margin-bottom: rem(25);
+		@include adaptiveValue("width", 270, 154, 992, 320, 1);
+		@include adaptiveValue("margin-top", 50, 30, 1500, 320, 1);
+
+		svg {
+			display: inline-block;
+			width: 100%;
+			overflow: initial;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				.logo__head {
+					transform: rotate(-5deg) translate(-5px, 0px);
+				}
+				.logo__word {
+					transform: translate(2px, 2px);
+				}
+				.logo__letters {
+					transform: translate(2px, -2px);
+				}
+			}
+		}
+	}
+
+	// .footer__middle
+
+	&__middle {
+		@include adaptiveValue("margin-bottom", 40, 10, 1500, 320, 1);
+	}
+
+	// .footer__bottom
+
+	&__bottom {
+	}
+}
+.middle-footer {
+	// .middle-footer__body
+
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: rem(30);
+		@media (min-width: $mobile) {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+
+	// .middle-footer__locations
+
+	&__locations {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		justify-content: space-between;
+		gap: rem(15);
+		@media (min-width: $mobileSmall) {
+			grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+		}
+		@media (min-width: $mobile) {
+			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		}
+	}
+
+	// .middle-footer__contacts
+
+	&__contacts {
+	}
+}
+
+.location-item {
+	// .location-item__wrapper
+
+	&__wrapper {
+	}
+
+	// .location-item__body
+
+	&__body {
+	}
+
+	// .location-item__icon
+
+	&__icon {
+	}
+
+	// .location-item__info
+
+	&__info {
+	}
+}
+
+.contacts-middle-footer {
+	// .contacts-middle-footer__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: rem(25);
+	}
+
+	// .contacts-middle-footer__phone
+
+	&__phone {
+	}
+
+	&__socials-box {
+		display: flex;
+		@include adaptiveValue("gap", 66, 20, 1920, 1200, 1);
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&._reverse {
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+			@media (max-width: $mobileSmall) {
+				flex-direction: column-reverse;
+			}
+		}
+	}
+
+	// .contacts-middle-footer__socials
+
+	&__socials {
+	}
+
+	// .contacts-middle-footer__mail-box
+
+	&__mail-box {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(10);
+		p {
+			position: relative;
+			padding-left: rem(15);
+
+			font-weight: 400;
+			font-size: rem(14);
+			line-height: math.div(17, 14);
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: rem(2);
+				left: 0;
+				width: rem(8);
+				height: rem(8);
+				border-radius: 50%;
+				background-color: #6c379d;
+			}
+		}
+	}
+
+	// .contacts-middle-footer__mail
+
+	&__mail {
+		font-weight: 600;
+		@include adaptiveValue("font-size", 28, 26, 1500, 320, 1);
+		line-height: math.div(34, 28);
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: rgba(34, 34, 34, 0.7);
+			}
+		}
+	}
+
+	// .contacts-middle-footer__subscribe-box
+
+	&__subscribe-box {
+		display: flex;
+		align-items: center;
+		column-gap: rem(15);
+		p {
+			max-width: rem(310);
+			font-weight: 600;
+			font-size: rem(18);
+			line-height: math.div(26, 18);
+		}
+		.actions-page-contacts & {
+			p {
+				max-width: none;
+				@include adaptiveValue("font-size", 18, 16);
+			}
+		}
+		.map-garten__content & {
+			p {
+				max-width: none;
+			}
+		}
+	}
+
+	// .contacts-middle-footer__icon
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		flex: 0 0 rem(45);
+		height: rem(45);
+		border-radius: 50%;
+		background-color: #039be5;
+
+		transition: background-color 0.3s ease 0s;
+		&::before {
+			font-size: rem(24);
+			color: #fff;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: rgba(3, 154, 229, 0.7);
+			}
+		}
+		.actions-page-contacts__subscribe &,
+		.map-garten__info-box & {
+			@media (max-width: $mobile) {
+				flex: 0 0 rem(36);
+				height: rem(36);
+				&::before {
+					font-size: rem(19);
+				}
+			}
+		}
+	}
+}
+
+.bottom-footer {
+	position: relative;
+	background-image: linear-gradient(98.95deg, rgba(246, 250, 255, 0.5) 6.09%, rgba(223, 245, 255, 0.5) 93%);
+	box-shadow: 0px 5px 20px #f2fbff;
+	backdrop-filter: blur(12.5px);
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+
+		background-image: linear-gradient(90deg, #6cd4ff 0%, #00b2f7 100%);
+	}
+	// .bottom-footer__container
+
+	&__container {
+	}
+
+	// .bottom-footer__body
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: rem(10);
+		@include adaptiveValue("padding-top", 41, 25, 1500, 320, 1);
+		@include adaptiveValue("padding-bottom", 77, 25, 1500, 320, 1);
+
+		@include adaptiveValue("font-size", 18, 14, 1500, 320, 1);
+		line-height: math.div(22, 18);
+		text-align: left;
+		a {
+			transition: color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					color: #00b2f7;
+				}
+			}
+		}
+		p {
+			@media (max-width: em(1550)) {
+				// span {
+				// 	display: inline-block;
+				// }
+			}
+		}
+
+		> span {
+			font-weight: 300;
+		}
+		@media (max-width: $tablet) {
+			flex-wrap: wrap;
+			justify-content: center;
+			row-gap: rem(15);
+		}
+	}
+
+	// .bottom-footer__link
+
+	&__link {
+		@include adaptiveValue("width", 175, 125, 992, 320, 1);
+		@media (max-width: $tablet) {
+			img {
+				width: 100%;
+			}
+		}
+		transition: transform 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: translateY(-2px);
+			}
+		}
+	}
+}
+
+//====================================================================================================

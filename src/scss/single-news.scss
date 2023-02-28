@@ -1,0 +1,260 @@
+.page-news-single {
+	// .page-news-single__single-news
+
+	&__single-news {
+	}
+
+	// .page-news-single__interesting
+
+	&__interesting {
+	}
+}
+
+//========================================================================================================================================================
+
+.single-news {
+	// .single-news__container
+
+	&__container {
+		@include adaptiveValue("margin-bottom", 100, 80);
+	}
+
+	// .single-news__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .single-news__title
+
+	&__title {
+		margin-bottom: rem(40);
+		@media (max-width: $tablet) {
+			margin-bottom: rem(25);
+		}
+		@media (max-width: $mobileSmall) {
+			max-width: rem(300);
+		}
+	}
+
+	// .single-news__date
+
+	&__date {
+		font-weight: 400;
+		font-size: rem(22);
+		line-height: math.div(27, 22);
+
+		color: #6c379d;
+
+		margin-bottom: rem(35);
+		@media (max-width: $tablet) {
+			margin-bottom: rem(25);
+		}
+	}
+
+	// .single-news__content
+
+	&__content {
+		position: relative;
+	}
+
+	&__circle {
+		&_1 {
+			top: 30%;
+			left: -15%;
+			transform: translateX(rem(-500));
+		}
+		&_2 {
+			bottom: rem(-120);
+			right: -15%;
+			transform: translateX(rem(-500));
+			&::before {
+				animation-delay: $timeDelay;
+			}
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+
+	// .single-news__items
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(44);
+		@media (max-width: $tablet) {
+			row-gap: rem(60);
+		}
+	}
+
+	// .single-news__item
+
+	&__item {
+		display: flex;
+		@include adaptiveValue("column-gap", 70, 20, 1920, 992, 1);
+
+		font-family: "Montserrat";
+		font-weight: 400;
+		font-size: rem(16);
+		line-height: math.div(24, 16);
+		span {
+			font-weight: 600;
+		}
+
+		&_reverse {
+			flex-direction: row-reverse;
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			@include adaptiveValue("row-gap", 30, 20, 992, 320, 1);
+		}
+	}
+
+	// .single-news__text-box
+
+	&__text-box {
+		flex: 0 1 55%;
+	}
+
+	&__sub-title {
+		font-weight: 600;
+		font-size: rem(24);
+		line-height: math.div(24, 24);
+
+		margin-bottom: rem(25);
+
+		@media (max-width: $tablet) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	// .single-news__text
+
+	&__text {
+		p {
+			&:not(:last-child) {
+				padding-bottom: rem(10);
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(10);
+	}
+
+	&__list-item {
+		position: relative;
+		padding-left: rem(20);
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+
+			width: rem(10);
+			height: rem(10);
+			border-radius: 50%;
+
+			background-image: linear-gradient(90.06deg, #957df3 0.07%, #662d91 99.96%);
+		}
+	}
+
+	// .single-news__image-box
+
+	&__image-box {
+		flex: 0 1 45%;
+	}
+
+	// .single-news__image
+
+	&__image {
+		position: relative;
+		width: 100%;
+		padding-bottom: calc(374 / 595) * 100%;
+
+		box-shadow: 0px 8px 18px rgba(34, 34, 34, 0.05);
+		border-radius: rem(10);
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+.interesting-news {
+	// .interesting-news__container
+
+	&__container {
+		@include adaptiveValue("margin-bottom", 100, 80);
+	}
+
+	// .interesting-news__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .interesting-news__title
+
+	&__title {
+		margin-bottom: rem(50);
+		@media (max-width: $tablet) {
+			margin-bottom: rem(40);
+		}
+	}
+
+	// .interesting-news__items
+
+	&__items {
+		position: relative;
+		z-index: 2;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		@include adaptiveValue("column-gap", 45, 30, 1920, 920, 1);
+		@include adaptiveValue("margin-bottom", 60, 40);
+		row-gap: rem(30);
+	}
+
+	// .interesting-news__item
+
+	&__item {
+	}
+
+	// .interesting-news__buttons-box
+
+	&__buttons-box {
+		display: flex;
+		justify-content: center;
+		@include adaptiveValue("margin-bottom", 60, 40);
+		&._hide {
+			display: none;
+		}
+	}
+
+	// .interesting-news__button
+
+	&__button {
+	}
+
+	// .interesting-news__pages-count-box
+
+	&__pages-count-box {
+	}
+	// .interesting-news__pages-count
+
+	&__pages-count {
+	}
+}

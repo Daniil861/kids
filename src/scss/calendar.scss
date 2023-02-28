@@ -1,0 +1,342 @@
+.calendar {
+	// .calendar__container
+
+	&__container {
+		@include adaptiveValue("margin-bottom", 100, 80);
+		@media (max-width: $mobileSmall) {
+			padding-inline: 0;
+		}
+	}
+
+	// .calendar__body
+
+	&__body {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__circle {
+		&_1 {
+			top: 0;
+			right: -15%;
+			transform: translateX(500px);
+			@media (max-width: $mobile) {
+				top: 20%;
+				right: 0;
+			}
+		}
+		&_2 {
+			top: 10%;
+			left: -15%;
+			&::before {
+				animation-delay: $timeDelay;
+			}
+			@media (max-width: $mobile) {
+				left: 0;
+				top: 35%;
+			}
+		}
+	}
+
+	// .calendar__title
+
+	&__title {
+		margin-bottom: rem(50);
+		@media (max-width: $mobile) {
+			margin-bottom: rem(40);
+		}
+		@media (max-width: em(600)) {
+			max-width: rem(350);
+		}
+		@media (max-width: $mobileSmall) {
+			padding-inline: rem(15);
+		}
+	}
+
+	// .calendar__schedule
+
+	&__schedule {
+		@include adaptiveValue("margin-bottom", 60, 40);
+	}
+
+	// .calendar__buttons-box
+
+	&__buttons-box {
+		display: flex;
+		justify-content: center;
+		column-gap: rem(40);
+		@media (max-width: em(650)) {
+			flex-direction: column-reverse;
+			row-gap: rem(25);
+			padding-inline: rem(15);
+		}
+	}
+
+	// .calendar__button
+
+	&__button {
+		padding-block: rem(30);
+		padding-inline: rem(70);
+
+		font-family: "Montserrat";
+		font-weight: 700;
+		@include adaptiveValue("font-size", 24, 16);
+		line-height: math.div(29, 24);
+
+		box-shadow: 0px 5px 20px 4px rgba(11, 182, 248, 0.2);
+		border-radius: 8px;
+
+		transition: box-shadow 0.3s ease 0s;
+
+		&_bd {
+			background: linear-gradient(90deg, #6cd4ff 0%, #00b2f7 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			border: 1px solid rgba(108, 212, 255, 1);
+		}
+		// .calendar__button_blue
+
+		&_blue {
+			background-image: linear-gradient(90deg, #6cd4ff 0%, #00b2f7 100%);
+			color: #ffffff;
+		}
+
+		@media (max-width: em(1550)) {
+			padding-block: rem(25);
+			padding-inline: rem(50);
+		}
+		@media (max-width: $mobile) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-block: 0;
+			height: rem(60);
+		}
+		@media (max-width: em(650)) {
+			padding-inline: 0;
+		}
+		@media (min-width: em(1024)) {
+			&:hover {
+				box-shadow: 0px 5px 25px 4px rgba(11, 182, 248, 0.4);
+			}
+		}
+	}
+}
+
+.schedule-calendar {
+	overflow-x: auto;
+	&::-webkit-scrollbar {
+		height: 10px;
+	}
+	&::-webkit-scrollbar-track {
+		background-image: linear-gradient(90deg, rgba(108, 212, 255, 0.5) 0%, rgba(0, 178, 247, 0.5) 100%);
+		border-radius: 4px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-image: linear-gradient(90deg, #6cd4ff 0%, #00b2f7 100%);
+		border: 1px solid #ffffff;
+		border-radius: 20px;
+	}
+	// .schedule-calendar__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(20);
+
+		background-image: linear-gradient(98.95deg, rgba(246, 250, 255, 0.5) 6.09%, rgba(223, 245, 255, 0.5) 93%);
+		backdrop-filter: blur(12.5px);
+
+		border-radius: 20px;
+		border: 1px solid rgba(8, 181, 248, 1);
+
+		@include adaptiveValue("padding-inline", 30, 15);
+		padding-block: rem(30) rem(40);
+		@media (max-width: $tablet) {
+			padding-block: rem(30) rem(70);
+			min-width: 970px;
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: $mobile) {
+			row-gap: rem(15);
+			min-width: 770px;
+		}
+	}
+
+	// .schedule-calendar__row
+
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		column-gap: rem(18);
+
+		&_header {
+			@include adaptiveValue("height", 87, 54);
+		}
+		&:first-child {
+			margin-bottom: rem(10);
+		}
+		@media (max-width: $tablet) {
+			column-gap: rem(10);
+		}
+		@media (max-width: $tablet) {
+			grid-template-columns: repeat(5, 180px);
+		}
+		@media (max-width: $mobile) {
+			grid-template-columns: repeat(5, 140px);
+		}
+	}
+
+	// .schedule-calendar__topic
+
+	&__topic {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background-image: linear-gradient(90.68deg, rgba(161, 126, 255, 0.5) 0.99%, rgba(105, 219, 255, 0.5) 103.91%);
+		border-radius: 10px;
+		border: 1px solid rgba(126, 217, 255, 1);
+
+		font-weight: 500;
+		font-size: rem(30);
+		line-height: math.div(37, 30);
+
+		span {
+			display: none;
+		}
+		@media (max-width: em(1550)) {
+			font-size: rem(26);
+		}
+		@media (max-width: em(1200)) {
+			font-size: rem(20);
+		}
+		@media (max-width: $mobile) {
+			p {
+				display: none;
+			}
+			span {
+				display: block;
+			}
+		}
+	}
+
+	// .schedule-calendar__empty
+
+	&__empty {
+	}
+
+	// .schedule-calendar__class
+
+	&__class {
+	}
+}
+.class-schedule-calendar {
+	// .class-schedule-calendar__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include adaptiveValue("row-gap", 10, 5);
+
+		height: 100%;
+
+		background: #ffffff;
+		border-radius: 10px;
+		border: 1px solid #27aae1;
+
+		padding-block: rem(20);
+		padding-inline: rem(15);
+
+		@media (max-width: em(1200)) {
+			padding-block: rem(10);
+			padding-inline: rem(10);
+		}
+	}
+
+	// .class-schedule-calendar__icon
+
+	&__icon {
+		margin-bottom: rem(10);
+	}
+
+	// .class-schedule-calendar__title
+
+	&__title {
+		flex: 1 1 auto;
+
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(10);
+
+		font-weight: 400;
+		font-size: rem(18);
+		line-height: math.div(22, 18);
+		text-align: center;
+		span {
+			font-weight: 600;
+		}
+		&._show768 {
+			display: none;
+		}
+		@media (max-width: em(1550)) {
+			font-size: rem(14);
+		}
+
+		@media (max-width: $mobile) {
+			font-size: rem(12);
+			row-gap: rem(4);
+			&._hide768 {
+				display: none;
+			}
+			&._show768 {
+				display: block;
+				span {
+					padding-right: 5px;
+				}
+			}
+		}
+	}
+
+	// .class-schedule-calendar__time
+
+	&__time {
+		display: flex;
+		align-items: center;
+		column-gap: rem(10);
+
+		font-weight: 600;
+		@include adaptiveValue("font-size", 18, 12);
+		font-size: rem(18);
+		line-height: math.div(22, 18);
+
+		background-color: rgba(255, 255, 255, 0.25);
+		box-shadow: 0px 1px 10px rgba(110, 59, 162, 0.15);
+		border-radius: 8px;
+
+		@include adaptiveValue("padding-block", 15, 10);
+		@include adaptiveValue("padding-inline", 28, 10);
+
+		&::before {
+			@include adaptiveValue("font-size", 20, 12);
+			background-image: linear-gradient(90.06deg, #957df3 0.07%, #662d91 99.96%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		@media (max-width: em(1550)) {
+			font-size: rem(15);
+		}
+		@media (max-width: em(1200)) {
+			font-size: rem(14);
+			padding-block: rem(10);
+			padding-inline: rem(10);
+		}
+		@media (max-width: $mobile) {
+			column-gap: rem(5);
+			font-size: rem(12);
+		}
+	}
+}

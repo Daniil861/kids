@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AcademKids - личный кабинет"
+})
+
+<body>
+	@@include('html/_loader.htm',{})
+	<div data-page="cabinet" class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page-cabinet">
+			<section class="page-cabinet__review review">
+				<div class="review__container">
+					<div class="review__body">
+						<div class="review__top">
+							<div class="review__title _title-circle _active">
+								<div class="_title-circle__inner"></div>
+								<h1>Личный кабинет</h1>
+							</div>
+						</div>
+						<div class="review__items">
+							<div class="review__messages messages-review">
+								<div class="messages-review__body">
+									<h2>Уважаемые родители!</h2>
+									<div class="messages-review__text-box">
+										<div class="messages-review__text messages-review__text_1">
+											<p>
+												Мы постарались сделать Ваш личный кабинет максимально понятным и простым.
+											</p>
+										</div>
+										<div class="messages-review__text messages-review__text_2 messages-review__text_b">
+											<p>
+												Здесь Вы можете:
+											</p>
+										</div>
+										<ul class="messages-review__list">
+											<li class="messages-review__item">
+												<p>не только <span>оплачивать</span> квитанции on-line</p>
+											</li>
+											<li class="messages-review__item">
+												<p><span>просматривать</span> историю всех платежей</p>
+											</li>
+											<li class="messages-review__item">
+												<p>
+													<span>редактировать</span>
+													или
+													<span>обновлять</span>
+													данные
+													<span>о Вашем ребенке.</span>
+												</p>
+											</li>
+										</ul>
+										<div class="messages-review__text messages-review__text_3">
+											<p><span>Мы не стоим на месте:</span> растем, развиваемся и стараемся учесть все
+												потребности и пожелания, как ваши, так и ваших деток.</p>
+										</div>
+										<div class="messages-review__text-b">
+											<p>Поэтому мы будем рады вашим отзывам, которые можно оставить в <a data-link-feedback
+													href="#">разделе обратная связь</a> </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="review__circle">
+								<div class="review__image">
+									<img width='228' height="228" src="@img/cabinet/academ-circle.svg" alt="Image">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-cabinet__documents documents-cabinet">
+				<div class="documents-cabinet__body">
+					<div data-tabs data-tabs-animate="500" class="documents-cabinet__tabs">
+						<div class="documents-cabinet__backgrounds">
+							<div class="documents-cabinet__circles">
+								<div class="documents-cabinet__circle circle circle_purple circle_1"> </div>
+								<div class="documents-cabinet__circle circle circle_purple circle_2"> </div>
+								<div class="documents-cabinet__circle circle circle_blue circle_3"> </div>
+								<div class="documents-cabinet__circle circle circle_blue circle_4"> </div>
+							</div>
+							<div class="documents-cabinet__shapes">
+								<div class="documents-cabinet__shape shape shape_1"></div>
+							</div>
+						</div>
+						<nav data-tabs-titles class="documents-cabinet__navigation tab__nav">
+							<button type="button" aria-label="icon-tab-1"
+								class="documents-cabinet__title tab__title tab__title_bef _tab-active _icon-tab-1">
+								<span>Данные ребенка и документы</span>
+							</button>
+							<button type="button" aria-label="icon-tab-2"
+								class="documents-cabinet__title tab__title tab__title_bef _icon-tab-2">
+								<span>Платежные документы</span>
+							</button>
+							<button type="button" aria-label="icon-tab-3"
+								class="documents-cabinet__title tab__title tab__title_bef _icon-tab-3">
+								<span>Обратная связь</span>
+							</button>
+						</nav>
+						<div data-tabs-body class="documents-cabinet__content">
+							<div class="documents-cabinet__wrapper documents-cabinet__wrapper_cnt">
+								<div class="documents-cabinet__data data-kid">
+									<div class="data-kid__body _title-kabinet">
+										<h3>Личные данные ребенка</h3>
+										<div class="data-kid__items">
+											<div class="data-kid__item">
+												<h4>Данные ребенка:</h4>
+												<div class="data-kid__input-box">
+													<input type="text" autocomplete="off" name="kid-data"
+														placeholder="Введите данные" aria-label="kid-data" class="data-kid__input">
+													<div class="data-kid__icon _icon-pencil"></div>
+												</div>
+											</div>
+											<div class="data-kid__item">
+												<h4>Группа:</h4>
+												<div class="data-kid__input-box">
+													<input type="text" autocomplete="off" name="kid-group"
+														placeholder="Введите данные" aria-label="kid-group" class="data-kid__input">
+													<div class="data-kid__icon _icon-pencil"></div>
+												</div>
+
+											</div>
+											<div class="data-kid__item">
+												<h4>Дата рождения ребенка:</h4>
+												<div class="data-kid__input-box">
+													<input type="text" autocomplete="off" name="kid-born-date"
+														placeholder="Введите данные" aria-label="kid-born" class="data-kid__input">
+													<div class="data-kid__icon _icon-pencil"></div>
+												</div>
+
+											</div>
+											<div class="data-kid__item">
+												<h4>Филиал:</h4>
+												<div class="data-kid__input-box">
+													<input type="text" autocomplete="off" name="kid-filial"
+														placeholder="Введите данные" aria-label="kid-filial" class="data-kid__input">
+													<div class="data-kid__icon _icon-pencil"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="documents-cabinet__files-kid files-kid">
+									<div class="files-kid__body _title-kabinet">
+										<h3>Данные и документы:</h3>
+										<form action="#" id="form-files-cabinet" class="files-kid__box">
+											<div class="files-kid__item item-files-kid">
+												<div class="item-files-kid__body">
+													<h4>Адрес места жительства (места пребывания, места фактического проживания)
+														ребенка:</h4>
+													<div class="item-files-kid__box">
+														<div class="item-files-kid__input-box">
+															<textarea placeholder="Загрузить файл" name="kid-adress-title"
+																class="item-files-kid__input"></textarea>
+															<div class="item-files-kid__input-box-file input-file">
+																<div class="input-file__item">
+																	<input type="file" name="kid-adress-document" aria-label="kid-adress"
+																		class="input-file__input-file">
+																	<div class="input-file__button _icon-download"></div>
+																</div>
+															</div>
+															<div class="item-files-kid__status">
+																<p>Загружено</p>
+																<div class="item-files-kid__icon-status">
+																	<img src="@img/icons/close.svg" alt="Icon">
+																</div>
+															</div>
+														</div>
+														<div class="item-files-kid__plus-btn-box">
+															<button type="button" aria-label="bnt-plus-1"
+																class="item-files-kid__plus-btn">+</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="files-kid__item item-files-kid">
+												<div data-attr="name" class="item-files-kid__body">
+													<h4>Фамилия, имя, отчество (при наличии) родителей (законных представителей)
+														ребенка:</h4>
+													<div class="item-files-kid__box">
+														<div class="item-files-kid__input-box">
+															<textarea placeholder="Загрузить файл" name="kid-name-title"
+																class="item-files-kid__input"></textarea>
+															<div class="item-files-kid__input-box-file input-file">
+																<div class="input-file__item">
+																	<input type="file" name="kid-name-document" aria-label="kid-name"
+																		class="input-file__input-file">
+																	<div class="input-file__button _icon-download"></div>
+																</div>
+															</div>
+															<div class="item-files-kid__status">
+																<p>Загружено</p>
+																<div class="item-files-kid__icon-status">
+																	<img src="@img/icons/close.svg" alt="Icon">
+																</div>
+															</div>
+														</div>
+														<div class="item-files-kid__plus-btn-box">
+															<button type="button" aria-label="bnt-plus-2"
+																class="item-files-kid__plus-btn">+</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="files-kid__item item-files-kid">
+												<div data-attr="pasport" class="item-files-kid__body">
+													<h4>Паспортные данные законного представителя:</h4>
+													<div class="item-files-kid__box">
+														<div class="item-files-kid__input-box">
+															<textarea placeholder="Загрузить файл" name="kid-pasport-title"
+																class="item-files-kid__input"></textarea>
+															<div class="item-files-kid__input-box-file input-file">
+																<div class="input-file__item">
+																	<input type="file" name="kid-pasport-document"
+																		aria-label="kid-pasport" class="input-file__input-file">
+																	<div class="input-file__button _icon-download"></div>
+																</div>
+															</div>
+															<div class="item-files-kid__status">
+																<p>Загружено</p>
+																<div class="item-files-kid__icon-status">
+																	<img src="@img/icons/close.svg" alt="Icon">
+																</div>
+															</div>
+														</div>
+														<div class="item-files-kid__plus-btn-box">
+															<button type="button" aria-label="bnt-plus-3"
+																class="item-files-kid__plus-btn">+</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="files-kid__item item-files-kid">
+												<div data-attr="docBorn" class="item-files-kid__body">
+													<h4>Свидетельство о рождении ребенка:</h4>
+													<div class="item-files-kid__box">
+														<div class="item-files-kid__input-box">
+															<textarea placeholder="Загрузить файл" name="kid-docBorn-title"
+																class="item-files-kid__input"></textarea>
+															<div class="item-files-kid__input-box-file input-file">
+																<div class="input-file__item">
+																	<input type="file" name="kid-docBorn-document"
+																		aria-label="kid-docBorn" class="input-file__input-file">
+																	<div class="input-file__button _icon-download"></div>
+																</div>
+															</div>
+															<div class="item-files-kid__status">
+																<p>Загружено</p>
+																<div class="item-files-kid__icon-status">
+																	<img src="@img/icons/close.svg" alt="Icon">
+																</div>
+															</div>
+														</div>
+														<div class="item-files-kid__plus-btn-box">
+															<button type="button" aria-label="bnt-plus-4"
+																class="item-files-kid__plus-btn">+</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="files-kid__item item-files-kid">
+												<div data-attr="secure" class="item-files-kid__body">
+													<h4>Реквизиты документа, подтверждающего установление опеки (при наличии):
+													</h4>
+													<div class="item-files-kid__box">
+														<div class="item-files-kid__input-box">
+															<textarea placeholder="Загрузить файл" name="kid-secure-title"
+																class="item-files-kid__input"></textarea>
+															<div class="item-files-kid__input-box-file input-file">
+																<div class="input-file__item">
+																	<input type="file" name="kid-secure-document" aria-label="kid-secure"
+																		class="input-file__input-file">
+																	<div class="input-file__button _icon-download"></div>
+																</div>
+															</div>
+															<div class="item-files-kid__status">
+																<p>Загружено</p>
+																<div class="item-files-kid__icon-status">
+																	<img src="@img/icons/close.svg" alt="Icon">
+																</div>
+															</div>
+														</div>
+														<div class="item-files-kid__plus-btn-box">
+															<button type="button" aria-label="bnt-plus-5"
+																class="item-files-kid__plus-btn">+</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="files-kid__item item-files-kid">
+												<div data-attr="parents" class="item-files-kid__body">
+													<h4>Адрес электронной почты, номер телефона (при наличии) родителей (законных
+														представителей) ребенка:
+													</h4>
+													<div class="item-files-kid__box">
+														<div class="item-files-kid__inputs">
+															<div class="item-files-kid__input-box item-files-kid__input-box_small">
+																<textarea placeholder="+7 (___) __-__-__" autocomplete="off"
+																	name="kid-parents-contact"
+																	class="item-files-kid__input _req _tel"></textarea>
+																<div class="item-files-kid__icon _icon-pencil"></div>
+															</div>
+															<div class="item-files-kid__input-box item-files-kid__input-box_small">
+																<textarea placeholder="+7 (___) __-__-__" autocomplete="off"
+																	name="kid-parents-contact"
+																	class="item-files-kid__input _req _tel"></textarea>
+																<div class="item-files-kid__icon _icon-pencil"></div>
+															</div>
+															<div class="item-files-kid__input-box item-files-kid__input-box_small">
+																<textarea placeholder="Введите email" autocomplete="off"
+																	name="kid-parents-contact"
+																	class="item-files-kid__input _req _email"></textarea>
+																<div class="item-files-kid__icon _icon-pencil"></div>
+															</div>
+														</div>
+														<div class="item-files-kid__empty"></div>
+													</div>
+												</div>
+											</div>
+											<div class="files-kid__item item-files-kid">
+												<div class="item-files-kid__body">
+													<h4>Потребности в обучении ребенка по адаптированной образовательной программе
+														дошкольного образования и (или) в создании специальных условий для
+														организации обучения и воспитания ребенка-инвалида в соответствии с
+														индивидуальной программой реабилитации инвалида (при наличии):
+													</h4>
+													<div class="item-files-kid__box">
+														<div class="item-files-kid__input-box">
+															<textarea placeholder="Введите данные" name="kid-teach-title"
+																class="item-files-kid__input item-files-kid__input_textarea"></textarea>
+															<div class="item-files-kid__icon _icon-pencil"></div>
+															<div class="item-files-kid__status">
+																<p>Загружено</p>
+																<div class="item-files-kid__icon-status">
+																	<img src="@img/icons/close.svg" alt="Icon">
+																</div>
+															</div>
+														</div>
+														<div class="item-files-kid__empty"></div>
+													</div>
+												</div>
+											</div>
+											<button type="submit" aria-label="submit-form-1" class="files-kid__button">
+												<span>Сохранить данные</span>
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="documents-cabinet__wrapper documents-cabinet__wrapper_cnt-2">
+								<div class="document-cabinet__payments payments-kid">
+									<div class="payments-kid__body _title-kabinet">
+										<h3>Платежи</h3>
+										<div class="payments-kid__box box-payments">
+											<div class="box-payments__body">
+												<div class="box-payments__box-items">
+
+													<div class="box-payments__grid box-payments__grid_header">
+														<div class="box-payments__title-column _white-space">&#8470; Квитанции</div>
+														<div class="box-payments__title-column">Дата</div>
+														<div class="box-payments__title-column">Назначение платежа</div>
+														<div class="box-payments__title-column">Сумма</div>
+														<div class="box-payments__title-column">Оплата</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+														<div class="box-payments__button-box">
+															<button data-modal-qr-btn data-path="" type="button" aria-label="btn-qr-1"
+																class="box-payments__button">
+																<span><span>Оплатить по</span> QR коду</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+														<div class="box-payments__button-box">
+															<button data-modal-qr-btn data-path="" type="button" aria-label="btn-qr-2"
+																class="box-payments__button">
+																<span><span>Оплатить по</span> QR коду</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+														<div class="box-payments__button-box">
+															<button data-modal-qr-btn data-path="" type="button" aria-label="btn-qr-3"
+																class="box-payments__button">
+																<span><span>Оплатить по</span> QR коду</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+														<div class="box-payments__button-box">
+															<button data-modal-qr-btn data-path="" type="button" aria-label="btn-qr-4"
+																class="box-payments__button">
+																<span><span>Оплатить по</span> QR коду</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+														<div class="box-payments__button-box">
+															<button data-modal-qr-btn data-path="" type="button" aria-label="btn-qr-5"
+																class="box-payments__button">
+																<span><span>Оплатить по</span> QR коду</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+														<div class="box-payments__button-box">
+															<button data-modal-qr-btn data-path="" type="button" aria-label="btn-qr-6"
+																class="box-payments__button">
+																<span><span>Оплатить по</span> QR коду</span>
+															</button>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+														<div class="box-payments__button-box">
+															<button data-modal-qr-btn data-path="" type="button" aria-label="btn-qr-7"
+																class="box-payments__button">
+																<span><span>Оплатить по</span> QR коду</span>
+															</button>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div class="box-payments__more-box-button">
+												<button type="button" aria-label="btn-more-1" class="box-payments__button-more">
+													<span class="box-payments__button-more-inner _icon-arrow-bottom">Показать
+														ещё</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="document-cabinet__payments payments-kid">
+									<div class="payments-kid__body payments-kid__body_m _title-kabinet">
+										<h3>Оплаты</h3>
+										<div class="payments-kid__box box-payments">
+											<div class="box-payments__body">
+												<div class="box-payments__box-items">
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_header">
+														<div class="box-payments__title-column _white-space">&#8470; Квитанции</div>
+														<div class="box-payments__title-column">Дата</div>
+														<div class="box-payments__title-column">Назначение платежа</div>
+														<div class="box-payments__title-column">Сумма</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div class="box-payments__more-box-button">
+												<button type="button" aria-label="btn-more-2" class="box-payments__button-more ">
+													<span class="box-payments__button-more-inner _icon-arrow-bottom">Показать
+														ещё</span>
+												</button>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+								<div class="document-cabinet__payments payments-kid">
+									<div class="payments-kid__body payments-kid__body_m _title-kabinet">
+										<h3>Возвраты</h3>
+										<div class="payments-kid__box box-payments">
+											<div class="box-payments__body">
+												<div class="box-payments__box-items">
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_header">
+														<div class="box-payments__title-column _white-space">&#8470; Квитанции</div>
+														<div class="box-payments__title-column">Дата</div>
+														<div class="box-payments__title-column">Назначение платежа</div>
+														<div class="box-payments__title-column">Сумма</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+													<div class="box-payments__grid box-payments__grid_m box-payments__grid_row">
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">229</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data">05.12.2023</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data _all-width">Оплата за детский товар
+															</div>
+														</div>
+														<div class="box-payments__row-item">
+															<div class="box-payments__text-data box-payments__text-data_m">5000 руб.
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div class="box-payments__more-box-button">
+												<button type="button" aria-label="btn-more-3" class="box-payments__button-more ">
+													<span class="box-payments__button-more-inner _icon-arrow-bottom">Показать
+														ещё</span>
+												</button>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="documents-cabinet__wrapper">
+								<div class="documents-cabinet__feedback feedback-kid">
+									<div class="feedback-kid__body">
+										<div class="feedback-kid__box">
+											<div class="feedback-kid__info info-feedback">
+												<div class="info-feedback__body _title-kabinet">
+													<h3>Нам важно ваше мнение</h3>
+													<p>Напишите нам ваши комментарии, пожелания или дайте любую обратную связь о
+														работе нашего детскго сада. Мы обязательно прочтем все сообщения и
+														непременно учтем их в нашей работе.</p>
+													<div class="info-feedback__socials socials">
+														<div class="socials__body _big">
+															<div class="socials__top">
+																<p>Или напишите нам</p>
+															</div>
+															<div class="socials__items">
+																<a aria-label="link-whatsap" href="#"
+																	class="socials__item socials__item_wh _icon-whatsap _big"></a>
+																<a aria-label="link-viber" href="#"
+																	class="socials__item socials__item_vb _icon-viber _big"></a>
+																<a aria-label="link-telegram" href="#"
+																	class="socials__item socials__item_tg _icon-telegram _big"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="feedback-kid__form-box">
+												<form action="#" id="form-feedback" class="feedback-kid__form">
+													<input type="text" autocomplete="off" placeholder="Введите имя и фамилию"
+														name="feedback-name" aria-label="feedback-name"
+														class="feedback-kid__input _req _name">
+													<textarea placeholder="Введите ваш комментарий" name="feedback-comment"
+														class="feedback-kid__textarea _req _text"></textarea>
+													<div class="feedback-kid__button-box">
+														<button type="submit" aria-label="form-submit-2"
+															class="feedback-kid__button">Отправить
+															заявку</button>
+													</div>
+													<div class="feedback-kid__check-box">
+														<input id="formAgreement" aria-label="feedback-checkbox" checked
+															type="checkbox" class="feedback-kid__checkbox _req">
+														<label for="formAgreement" class="feedback-kid__label"></label>
+														<span>Даю свое согласие на обработку
+															<a href="#">персональных данных</a></span>
+													</div>
+												</form>
+												<div class="feedback-kid__after-text">
+													<p>Спасибо за обратную связь! Нам очень важно Ваше мнение о нашем детском саде!
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_modal-callback.htm',{})
+	@@include('html/_modal-login.htm',{})
+	@@include('html/_modal-recover.htm',{})
+	<div data-modal-qr class="modal modal_qr">
+		<div class="modal__body">
+			<div class="modal__title">
+				<h2>Оплатить по QR коду</h2>
+			</div>
+			<div class="modal__image"></div>
+			<div class="modal__sub-text">
+				<p>
+					Для оплаты отсканируйте qr код
+				</p>
+			</div>
+			<div class="modal__paragr">
+				<p>Сумма к оплате:</p>
+			</div>
+			<div class="modal__price">
+				<p>5000 руб.</p>
+			</div>
+			<button type="button" aria-label="btn-close-5" class="modal__btn-close"></button>
+		</div>
+	</div>
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<div data-modal-consultation class="modal">
+	<div class="modal__body">
+		<h2 class="modal__title">Получить консультацию</h2>
+		<h3 class="modal__text">Заполните данные и мы свяжемся с вами и <span>ответим на все вопросы</span></h3>
+		<div class="modal__form-box">
+			<form action="#" id="form-consultation" class="modal__form">
+				<div class="modal__box">
+					<div class="modal__sub-title">Имя</div>
+					<input autocomplete="off" placeholder="Введите имя" name="call-name" type="text"
+						class="modal__input _req _name">
+				</div>
+				<div class="modal__box">
+					<div class="modal__sub-title">Телефон</div>
+					<input autocomplete="off" placeholder="Введите телефон" name="call-phone" type="tel"
+						class="modal__input _req _tel">
+				</div>
+				<div class="modal__check-box">
+					<input id="formAgreement3" checked type="checkbox" class="modal__checkbox _req">
+					<label for="formAgreement3" class="modal__label"></label>
+					<span>Даю свое согласие на обработку
+						<a href="#">персональных данных</a></span>
+				</div>
+				<div class="modal__button-box">
+					<button type="submit" class="modal__button">
+						Отправить
+					</button>
+				</div>
+			</form>
+		</div>
+		<button type="button" class="modal__btn-close"><span></span></button>
+	</div>
+	<div class="modal__after-complete-box after-complete-box">
+		<div class="after-complete-box__body">
+			<div class="after-complete-box__text">Ваша заявка отправлена, ждите звонка</div>
+			<div class="after-complete-box__icon">
+				<img loading="lazy" src="@img/icons/arrow-complete.svg" alt="Icon">
+			</div>
+			<button type="button" class="modal__btn-close"><span></span></button>
+		</div>
+	</div>
+</div>
